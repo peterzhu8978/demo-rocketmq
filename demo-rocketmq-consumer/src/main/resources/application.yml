@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /demo-rocketmq-consumer
+  port: 8082
+
+rocketmq:
+  consumer:
+    namesrvAddr: 192.168.101.251:9876;192.168.101.253:9876;192.168.101.254:9876
+    groupName: demo-rocketmq-consumer-group01
+    topics:
+      sentQtyTopic: TOPIC-SENT-QTY-DEV
+      sentStatusTopic: TOPIC-SENT-STATUS-DEV
+      recycleQtyTopic: TOPIC-RECYCLE-QTY-DEV
+      accessTopic: TOPIC-ACCESS-DEV

@@ -1,0 +1,16 @@
+package org.examples.rocketmq.producer.message;
+
+import lombok.Data;
+
+/**
+ * @Version:
+ * @Date: 2020/4/13
+ * @Company: ruixiaoyun.ltd
+ */
+@Data
+public class AccessMessageEntity extends MessageEntity {
+
+    private String rySecret;
+
+    private String ip;
+}

@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /demo-rocketmq-producer
+  port: 8081
+
+rocketmq:
+  producer:
+    namesrvAddr: 192.168.101.251:9876;192.168.101.253:9876;192.168.101.254:9876
+    groupName: demo-rocketmq-producer-group01
+    #同一项目在同一服务器启动多个JVM时指定不同的instanceName
+    instanceName: demo-rocketmq-producer-inst01
+    topics:
+      sentQtyTopic: TOPIC-SENT-QTY-DEV
+      sentStatusTopic: TOPIC-SENT-STATUS-DEV
+      recycleQtyTopic: TOPIC-RECYCLE-QTY-DEV
+      accessTopic: TOPIC-ACCESS-DEV
